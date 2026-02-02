@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  frontend:
+    build:
+      context: ./pa-system 
+      dockerfile: Dockerfile
+    container_name: pa-frontend
+    ports:
+      - "5100:5173"
+    volumes:
+      - ./pa-system:/usr/src/app
+      - /usr/src/app/node_modules 
+    environment:
+      - CHOKIDAR_USEPOLLING=true
