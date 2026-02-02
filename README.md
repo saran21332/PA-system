@@ -22,3 +22,9 @@ Frontend
 
 - React.js
 - Vite
+
+Devops
+
+- dockerfile
+- dockercompose
+- nginx
